@@ -1,0 +1,433 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+html{
+    background-image: linear-gradient(to top,white,RGB(219,219,219));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*{
+    font-family: Raleway, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body{
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+
+    .up_left{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    #logo{
+        height: 150px;
+        width: 150px;
+    }
+    
+    #title{
+        font-size: 7vh;
+        margin: 0;
+    }
+    
+    #subtitle{ 
+        font-size: 3vh;
+        margin: 0;
+    }
+    
+    .about_me{
+        width: 80%;
+    }
+    
+    #about_me_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin-bottom: 0;
+    }
+    
+    #about_me_text{
+        font-size: 3vh;
+        margin-top: 5px;
+    }
+    
+    .down_right{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .contacts{
+        width: 80%;
+        
+        text-align: center;
+    }
+    
+    #contacts_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    #contacts_text{
+        font-size: 3vh;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    #icon{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    body{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .up_left{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logo{
+        height: 150px;
+        width: 150px;
+    }
+    
+    #title{
+        font-size: 7vh;
+        margin: 0;
+    }
+    
+    #subtitle{ 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    .down_right{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about_me{
+        width: 80%;
+    }
+    
+    #about_me_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin-bottom: 0;
+    }
+    
+    #about_me_text{
+        font-size: 3vh;
+        margin-top: 5px;
+    }
+    
+    .contacts{
+        width: 80%;
+        
+        text-align: center;
+    }
+    
+    #contacts_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    #contacts_text{
+        font-size: 3vh;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    #icon{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px;
+        margin-top: 5px;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    body{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .up_left{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logo{
+        height: 150px;
+        width: 150px;
+    }
+    
+    #title{
+        font-size: 6vh;
+        margin: 0;
+    }
+    
+    #subtitle{ 
+        font-size: 2vh;
+        margin: 0;
+    }
+    
+    .down_right{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about_me{
+        width: 80%;
+    }
+    
+    #about_me_title{
+        text-align: center; 
+        font-size: 5vh;
+        margin-bottom: 0;
+    }
+    
+    #about_me_text{
+        font-size: 2vh;
+        margin-top: 5px;
+    }
+     
+    .contacts{
+        width: 80%;
+        text-align: center;
+    }
+    
+    #contacts_title{
+        text-align: center; 
+        font-size: 5vh;
+        margin: 0;
+    }
+    
+    #contacts_text{
+        font-size: 2vh;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    
+    #icon{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .up_left{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logo{
+        height: 150px;
+        width: 150px;
+    }
+    
+    #title{
+        font-size: 7vh;
+        margin: 0;
+    }
+    
+    #subtitle{ 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    .down_right{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about_me{
+        width: 80%;
+    }
+    
+    #about_me_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin-bottom: 0;
+    }
+    
+    #about_me_text{
+        font-size: 3vh;
+        margin-top: 5px;
+    }
+    
+    
+    .contacts{
+        width: 80%;
+        
+        text-align: center;
+    }
+    
+    #contacts_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    #contacts_text{
+        font-size: 3vh;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    #icon{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    body{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .up_left{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logo{
+        height: 150px;
+        width: 150px;
+    }
+    
+    #title{
+        font-size: 7vh;
+        margin: 0;
+    }
+    
+    #subtitle{ 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    .down_right{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about_me{
+        width: 80%;
+    }
+    
+    #about_me_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin-bottom: 0;
+    }
+    
+    #about_me_text{
+        font-size: 3vh;
+        margin-top: 5px;
+    }
+    
+    .contacts{
+        width: 80%;
+        
+        text-align: center;
+    }
+    
+    #contacts_title{
+        text-align: center; 
+        font-size: 4vh;
+        margin: 0;
+    }
+    
+    #contacts_text{
+        font-size: 3vh;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    #icon{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+} 
